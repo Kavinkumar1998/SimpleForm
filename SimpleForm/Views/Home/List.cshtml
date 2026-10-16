@@ -1,0 +1,31 @@
+﻿@model IEnumerable<SimpleForm.Models.User>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Town</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>      
+                    <td>@user.Town</td>
+                    <td>@user.City</td>
+                    <td>@user.State</td>
+                    <td>@user.Country</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

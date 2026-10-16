@@ -25,7 +25,7 @@ namespace SimpleForm.Controllers
             {
                 _context.Users.Add(user);
                 _context.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             return View(user);
         }
